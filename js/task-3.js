@@ -1,9 +1,7 @@
 // sortByDescendingFriendCount fonksiyonu, kullanıcıları arkadaş sayısına göre azalan sırada sıralar
-const sortByDescendingFriendCount = users =>
-  users.toSorted(
-    (firstUser, secondUser) =>
-      secondUser.friends.length - firstUser.friends.length
-  );
+const sortByDescendingFriendCount = (users) => {
+  return users.toSorted((a, b) => b.friends.length - a.friends.length);
+};
 
 ////////////
 
