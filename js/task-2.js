@@ -1,6 +1,8 @@
 // getUsersWithFriend fonksiyonu, belirli bir arkadaş ismine sahip kullanıcıları filtreler ve döndürür
-const getUsersWithFriend = (users, friendName) =>
-  users.filter(user => user.friends.includes(friendName));
+const getUsersWithFriend = (users, friendName) => {
+  return users.filter((user) => user.friends.includes(friendName));
+};
+
 
 ////////////
 const allUsers = [
