@@ -1,16 +1,7 @@
-// makeArray fonksiyonu, iki dizi ve maksimum uzunluk alır ve birleşik dizinin uzunluğunu maksimum uzunluk ile sınırlar
-function makeArray(firstArray, secondArray, maxLength) {
-  // İlk diziyi ve ikinci diziyi birleştirir
-  const newArray = firstArray.concat(secondArray);
+const getUserNames = (users) => {
+  return users.map((user) => user.name);
+};
 
-  // Yeni dizinin uzunluğu belirtilen maksimum uzunluğu aşarsa, uzunluğu maksimum uzunluğa ayarlar
-  if (newArray.length > maxLength) {
-    newArray.length = maxLength;
-  }
-
-  // Sonuçta oluşan diziyi döndürür
-  return newArray;
-}
 
 // Testler
 console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]
